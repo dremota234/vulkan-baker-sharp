@@ -2,6 +2,8 @@
 
 namespace ShaderPipelineBaker.Infrastructure.ReadingFiles
 {
+    using ShadersData.Metadata;
+
     /// <summary>
     /// Читает JSON-конфиг и заполняет <see cref="ConfigDatas"/>.
     /// <para>Пример ожидаемой структуры JSON-файла:</para>
