@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShaderPipelineBaker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba5ada07149fd1b28edc84a702e51fa22e11a6c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShaderPipelineBaker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShaderPipelineBaker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
