@@ -2,15 +2,6 @@
 
 namespace ShaderPipelineBaker.Infrastructure.ReadingFiles
 {
-    internal record ConfigData(
-            string shaderName,
-            string hlslPath,
-            string spvPath,
-            string spvTextPath,
-            string binPath,
-            string csPath
-        );
-
     /// <summary>
     /// Читает JSON-конфиг и заполняет <see cref="ConfigDatas"/>.
     /// <para>Пример ожидаемой структуры JSON-файла:</para>
@@ -76,12 +67,12 @@ namespace ShaderPipelineBaker.Infrastructure.ReadingFiles
                 foreach (JsonElement element in shaderData.EnumerateArray())
                 {
                     ConfigDatas.Add(new ConfigData(
-                        shaderName: currentShaderName,
-                        hlslPath: element.GetProperty("hlslPath").GetString() ?? "",
-                        spvPath: element.GetProperty("spvPath").GetString() ?? "",
-                        spvTextPath: element.GetProperty("spvTextPath").GetString() ?? "",
-                        binPath: element.GetProperty("binPath").GetString() ?? "",
-                        csPath: element.GetProperty("csPath").GetString() ?? ""
+                        ShaderName: currentShaderName,
+                        HlslPath: element.GetProperty("hlslPath").GetString() ?? "",
+                        SpvPath: element.GetProperty("spvPath").GetString() ?? "",
+                        SpvTextPath: element.GetProperty("spvTextPath").GetString() ?? "",
+                        BinPath: element.GetProperty("binPath").GetString() ?? "",
+                        CsPath: element.GetProperty("csPath").GetString() ?? ""
                     ));
                 }
             }
