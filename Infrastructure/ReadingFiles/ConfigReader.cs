@@ -51,9 +51,8 @@ namespace ShaderPipelineBaker.Infrastructure.ReadingFiles
         internal List<ConfigData> Load()
         {
             if (!File.Exists(configPath))
-            {
                 throw new FileNotFoundException($"Конфиг не найден: {configPath}");
-            }
+            
 
             string jsonString = File.ReadAllText(configPath);
 
